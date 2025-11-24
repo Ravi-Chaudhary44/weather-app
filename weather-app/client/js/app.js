@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchBtn = document.getElementById('search-btn');
     const cityInput = document.getElementById('city-input');
+    const loadingMessage = document.getElementById('loading-message');
     let isFirstRequest = true;
     searchBtn.addEventListener('click', fetchWeather);
     cityInput.addEventListener('keypress', function(e) {
@@ -46,5 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
 
 
