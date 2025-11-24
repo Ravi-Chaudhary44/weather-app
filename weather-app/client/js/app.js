@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!city) return;
 
         try {
-            const response = await fetch(`https://weather-app-server-iv4r.onrender.com/api/weather?city=${encodeURIComponent(city)}`);
+            const response = await fetch(`https://weather-app-server-****.***.com/api/weather?city=${encodeURIComponent(city)}`);
 
             if (!response.ok) {
                 throw new Error('City not found');
@@ -39,4 +39,5 @@ document.addEventListener('DOMContentLoaded', function() {
        
       
     }
+
 });
